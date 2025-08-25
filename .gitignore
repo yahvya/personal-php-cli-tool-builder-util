@@ -1,0 +1,11 @@
+# sensible files
+/vendor/
+
+# editors
+
+**/.idea/
+**/.vscode/
+
+# Tests cache
+Test/cache/*
+!Test/cache/.gitkeep

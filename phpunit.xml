@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="./Test/boostrap.php"
+         cacheDirectory="./Test/cache"
+         executionOrder="depends,defects"
+         requireCoverageMetadata="true"
+         beStrictAboutCoverageMetadata="true"
+         beStrictAboutOutputDuringTests="true"
+         displayDetailsOnPhpunitDeprecations="true"
+         failOnPhpunitDeprecation="true"
+         failOnRisky="true"
+         failOnWarning="true"
+         testdox="true"
+>
+    <testsuites>
+        <testsuite name="default">
+            <directory>Test</directory>
+        </testsuite>
+    </testsuites>
+
+    <source ignoreIndirectDeprecations="true" restrictNotices="true" restrictWarnings="true">
+        <include>
+            <directory>Src</directory>
+        </include>
+        <exclude>
+            <file>Src/DependencyManagerError.php</file>
+            <file>Src/DependencyManagerException.php</file>
+        </exclude>
+    </source>
+
+    <coverage
+            ignoreDeprecatedCodeUnits="true"
+    >
+        <report>
+            <html outputDirectory="Test/cache/coverage/html-coverage"/>
+            <text outputFile="Test/cache/coverage/text-coverage.txt"/>
+        </report>
+    </coverage>
+</phpunit>
