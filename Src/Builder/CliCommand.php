@@ -18,11 +18,11 @@ interface CliCommand
     public function getOptionsDescriptions(): array;
 
     /**
-     * Print the help lines for the command. It should end which a line break
+     * Provide the help line for the command
      * @param CliToolBuilder $associatedBuilder Associated builder
      * @return string Title line
      */
-    public function displayHelpLine(CliToolBuilder $associatedBuilder): string;
+    public function getHelpLine(CliToolBuilder $associatedBuilder): string;
 
     /**
      * Execute the command

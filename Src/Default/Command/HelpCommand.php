@@ -26,7 +26,7 @@ class HelpCommand implements CliCommand
         ];
     }
 
-    public function displayHelpLine(CliToolBuilder $associatedBuilder): string
+    public function getHelpLine(CliToolBuilder $associatedBuilder): string
     {
         return "[help] This command displays the help of a specific command or each commands";
     }
@@ -60,7 +60,7 @@ class HelpCommand implements CliCommand
     {
         foreach ($commands as $command)
         {
-            $command->displayHelpLine(associatedBuilder: $associatedBuilder);
+            $command->getHelpLine(associatedBuilder: $associatedBuilder);
 
             $optionRows = [];
 
@@ -70,7 +70,7 @@ class HelpCommand implements CliCommand
             }
 
             $tablePrinter = new Table(output: $associatedBuilder->configuration->printer->outputManager);
-            $tablePrinter->setHeaderTitle(title: $command->displayHelpLine(associatedBuilder: $associatedBuilder));
+            $tablePrinter->setHeaderTitle(title: $command->getHelpLine(associatedBuilder: $associatedBuilder));
 
             if (empty($optionRows))
             {

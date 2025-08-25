@@ -24,8 +24,10 @@
             <directory>Src</directory>
         </include>
         <exclude>
-            <file>Src/DependencyManagerError.php</file>
-            <file>Src/DependencyManagerException.php</file>
+            <directory>Src/Default</directory>
+            <file>Src/Builder/CliCommand.php</file>
+            <file>Src/Builder/CliPrinter.php</file>
+            <file>Src/Builder/CliArgument.php</file>
         </exclude>
     </source>
 

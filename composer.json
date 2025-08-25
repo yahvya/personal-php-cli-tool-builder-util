@@ -26,5 +26,10 @@
   "require": {
     "php": ">= 8.3",
     "symfony/console": "^7.3"
+  },
+  "archive": {
+    "exclude": [
+      "./Test"
+    ]
   }
 }

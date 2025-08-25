@@ -17,6 +17,7 @@
 
 The steps to create your own scripts are as follows:
 
+- Create your command classes by implementing the ```CliCommand``` interface
 - Create the script file
 - Load your autoload file
 - Create an instance of the ```CliToolBuilder``` class with the expected configuration like bellow
@@ -52,6 +53,12 @@ catch(Exception $e)
     echo $e->getMessage();
 }
 ```
+
+---
+
+There are also some 'traits' available under the ```Yahvya\PhpCliToolBuilder\Power``` namespace that you can use to develop your commands quickly.
+
+- ```SearchArgumentPower``` : allows searching arguments in different ways
 
 ## ✅ Library Test Coverage
 
