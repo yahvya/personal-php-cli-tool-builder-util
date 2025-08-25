@@ -8,7 +8,7 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Yahvya\\PhpCliToolBuilder\\": "src/"
+      "Yahvya\\PhpCliToolBuilder\\": "Src/"
     }
   },
   "autoload-dev": {
@@ -19,10 +19,12 @@
   "authors": [
     {
       "name": "Yahaya Bathily",
-      "email": "yahayad.dev@gmail.com"
+      "email": "yahayad.dev@gmail.com",
+      "homepage": "https://yahaya-dev.vercel.app"
     }
   ],
   "require": {
-    "php": ">= 8.3"
+    "php": ">= 8.3",
+    "symfony/console": "^7.3"
   }
 }
