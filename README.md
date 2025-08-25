@@ -71,6 +71,22 @@ php vendor/bin/phpunit
 ### Code Coverage Report
 
 ```
+
+
+Code Coverage Report:
+  2025-08-25 20:06:29
+
+ Summary:
+  Classes: 66.67% (2/3)
+  Methods: 60.00% (3/5)
+  Lines:   59.46% (22/37)
+
+Yahvya\PhpCliToolBuilder\Builder\CliToolBuilder
+  Methods:  33.33% ( 1/ 3)   Lines:  53.12% ( 17/ 32)
+Yahvya\PhpCliToolBuilder\Builder\CliToolConfiguration
+  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  1/  1)
+Yahvya\PhpCliToolBuilder\Power\SearchArgumentPower
+  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  4/  4)
 ```
 
 ---
